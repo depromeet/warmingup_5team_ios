@@ -56,5 +56,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NMFClientId</key>
+	<string>068dhv2w46</string>
 </dict>
 </plist>
