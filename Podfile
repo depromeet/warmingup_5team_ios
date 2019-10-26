@@ -7,4 +7,5 @@ target 'StreetCat' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SnapKit'
+  pod 'NMapsMap'
 end
