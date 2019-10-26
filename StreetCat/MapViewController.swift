@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import NMapsMap
 
 class MapViewController: UIViewController {
 

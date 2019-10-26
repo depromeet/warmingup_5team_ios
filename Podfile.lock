@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (4.9.0)
+  - NMapsMap (3.6.0)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - NMapsMap
   - SnapKit
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - NMapsMap
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  NMapsMap: be525094041c1ba7ab5035c9b3215c797a2bbb13
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 46bcb46c5020ca31f908b22f4f0582797e882aeb
+PODFILE CHECKSUM: a78a07323b4b84acbd62d12610451d4a02d71e28
 
 COCOAPODS: 1.8.4
