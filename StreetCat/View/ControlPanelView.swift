@@ -20,6 +20,9 @@ class ControlPanelView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
+        addCatButton.alignVertical(spacing: 6)
+        findDirectionButton.alignVertical(spacing: 6)
+        aroundButton.alignVertical(spacing: 6)
     }
     
     required init?(coder: NSCoder) {
