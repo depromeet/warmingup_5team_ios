@@ -19,34 +19,37 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6O6-tA-dJb">
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6O6-tA-dJb">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qM-nS-Q4h">
-                            <rect key="frame" x="0.0" y="0.0" width="131.5" height="200"/>
-                            <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="길냥이 추가">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qM-nS-Q4h">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="길냥이 추가" image="addCat">
+                                <color key="titleColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.28627450980392155" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="addCatBtnTapped:" destination="-1" eventType="touchUpInside" id="RZV-2A-FT4"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnW-pr-LiO">
-                            <rect key="frame" x="141.5" y="0.0" width="131" height="200"/>
-                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="길찾기">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnW-pr-LiO">
+                            <rect key="frame" x="138" y="0.0" width="138" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="길찾기" image="search">
+                                <color key="titleColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.28627450980392155" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="findDirectionBtnTapped:" destination="-1" eventType="touchUpInside" id="27i-fL-NRL"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNY-hx-nV5">
-                            <rect key="frame" x="282.5" y="0.0" width="131.5" height="200"/>
-                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="주변">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNY-hx-nV5">
+                            <rect key="frame" x="276" y="0.0" width="138" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="주변" image="around">
+                                <color key="titleColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.28627450980392155" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="aroundBtnTapped:" destination="-1" eventType="touchUpInside" id="oDt-bT-CCC"/>
@@ -69,4 +72,9 @@
             <point key="canvasLocation" x="139" y="133"/>
         </view>
     </objects>
+    <resources>
+        <image name="addCat" width="23" height="21"/>
+        <image name="around" width="18" height="22"/>
+        <image name="search" width="21" height="21"/>
+    </resources>
 </document>
