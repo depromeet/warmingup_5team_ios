@@ -14,6 +14,9 @@
 		7E61F48523589B2D00873350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E61F48423589B2D00873350 /* Assets.xcassets */; };
 		7E61F48823589B2D00873350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E61F48723589B2D00873350 /* Preview Assets.xcassets */; };
 		7E61F48B23589B2D00873350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E61F48923589B2D00873350 /* LaunchScreen.storyboard */; };
+		7EEDD9072364AFA500241D5D /* ControlPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDD9062364AFA500241D5D /* ControlPanelView.xib */; };
+		7EEDD9092364B06900241D5D /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDD9082364B06900241D5D /* ControlPanelView.swift */; };
+		7EEDD90C2364B23800241D5D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDD90B2364B23800241D5D /* UIViewExtensions.swift */; };
 		7EFF17FD235AF3EF00412F96 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF17FC235AF3EF00412F96 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		7E61F48723589B2D00873350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E61F48A23589B2D00873350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E61F48C23589B2D00873350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EEDD9062364AFA500241D5D /* ControlPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlPanelView.xib; sourceTree = "<group>"; };
+		7EEDD9082364B06900241D5D /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
+		7EEDD90B2364B23800241D5D /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		7EFF17FC235AF3EF00412F96 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C22EE5F9B455FD5766F5A18E /* Pods_StreetCat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreetCat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +71,8 @@
 		7E61F47D23589B2C00873350 /* StreetCat */ = {
 			isa = PBXGroup;
 			children = (
+				7E949C612364B70D0012CE4F /* View */,
+				7EEDD90A2364B22D00241D5D /* Extensions */,
 				7E61F47E23589B2C00873350 /* AppDelegate.swift */,
 				7E61F48023589B2C00873350 /* SceneDelegate.swift */,
 				7E61F48223589B2C00873350 /* ContentView.swift */,
@@ -83,6 +91,23 @@
 				7E61F48723589B2D00873350 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E949C612364B70D0012CE4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7EEDD9062364AFA500241D5D /* ControlPanelView.xib */,
+				7EEDD9082364B06900241D5D /* ControlPanelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EEDD90A2364B22D00241D5D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7EEDD90B2364B23800241D5D /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B9E49C0F87D3388430B10654 /* Pods */ = {
@@ -163,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E61F48B23589B2D00873350 /* LaunchScreen.storyboard in Resources */,
+				7EEDD9072364AFA500241D5D /* ControlPanelView.xib in Resources */,
 				7E61F48823589B2D00873350 /* Preview Assets.xcassets in Resources */,
 				7E61F48523589B2D00873350 /* Assets.xcassets in Resources */,
 			);
@@ -220,6 +246,8 @@
 				7E61F47F23589B2C00873350 /* AppDelegate.swift in Sources */,
 				7E61F48123589B2C00873350 /* SceneDelegate.swift in Sources */,
 				7E61F48323589B2C00873350 /* ContentView.swift in Sources */,
+				7EEDD9092364B06900241D5D /* ControlPanelView.swift in Sources */,
+				7EEDD90C2364B23800241D5D /* UIViewExtensions.swift in Sources */,
 				7EFF17FD235AF3EF00412F96 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
