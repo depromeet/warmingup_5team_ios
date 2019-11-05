@@ -21,3 +21,18 @@ extension UIView {
         addSubview(nib)
     }
 }
+
+@IBDesignable
+extension UIView {
+
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return self.layer.cornerRadius
+        }
+        set {
+            self.clipsToBounds = true
+            self.layer.cornerRadius = newValue
+        }
+    }
+}
