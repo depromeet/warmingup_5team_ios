@@ -15,6 +15,7 @@ class ControlPanelView: UIView {
     @IBOutlet weak var findDirectionButton: UIButton!
     @IBOutlet weak var aroundButton: UIButton!
 
+    var didTapFindDirectionButton: ((_ sender: UIButton) -> Void)?
     var didTapAroundButton: ((_ sender: UIButton) -> Void)?
 
     override init(frame: CGRect) {
@@ -23,6 +24,20 @@ class ControlPanelView: UIView {
         addCatButton.alignVertical(spacing: 6)
         findDirectionButton.alignVertical(spacing: 6)
         aroundButton.alignVertical(spacing: 6)
+        
+        let selectedColor = UIColor(red: 240/255, green: 93/255, blue: 29/255, alpha: 1.0)
+        
+        addCatButton.setTitleColor(selectedColor, for: .selected)
+        addCatButton.setImage(UIImage(named: "addCat")?.withRenderingMode(.alwaysTemplate), for: .selected)
+        addCatButton.tintColor = selectedColor
+        
+        findDirectionButton.setTitleColor(selectedColor, for: .selected)
+        findDirectionButton.setImage(UIImage(named: "search")?.withRenderingMode(.alwaysTemplate), for: .selected)
+        findDirectionButton.tintColor = selectedColor
+        
+        aroundButton.setTitleColor(selectedColor, for: .selected)
+        aroundButton.setImage(UIImage(named: "around")?.withRenderingMode(.alwaysTemplate), for: .selected)
+        aroundButton.tintColor = selectedColor
     }
     
     required init?(coder: NSCoder) {
@@ -34,10 +49,18 @@ class ControlPanelView: UIView {
     }
 
     @IBAction func findDirectionBtnTapped(_ sender: UIButton) {
-
+        if !sender.isSelected {
+            addCatButton.isSelected = false
+            aroundButton.isSelected = false
+        }
+        didTapFindDirectionButton?(sender)
     }
 
     @IBAction func aroundBtnTapped(_ sender: UIButton) {
+        if !sender.isSelected {
+            addCatButton.isSelected = false
+            findDirectionButton.isSelected = false
+        }
         didTapAroundButton?(sender)
     }
 }
