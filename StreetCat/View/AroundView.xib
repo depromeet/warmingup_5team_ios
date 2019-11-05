@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AroundView" customModule="StreetCat" customModuleProvider="target">
+            <connections>
+                <outlet property="catButton" destination="Pwm-Id-3zL" id="RDL-z0-UnP"/>
+                <outlet property="hospitalButton" destination="u8d-SF-l72" id="qkr-ba-fPk"/>
+                <outlet property="restaurantButton" destination="Gf5-Of-d57" id="3Yf-Jy-M7E"/>
+                <outlet property="shelterButton" destination="mCF-jN-9aQ" id="zfd-DO-w9q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울 강남구 서초 4동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vib-wg-GmU">
+                    <rect key="frame" x="136.5" y="0.0" width="141.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Rwm-mP-6CG">
+                    <rect key="frame" x="39" y="59.5" width="336" height="68"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwm-Id-3zL">
+                            <rect key="frame" x="0.0" y="0.0" width="87" height="68"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="68" id="rM6-Um-BjZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="길냥이" image="2436">
+                                <color key="titleColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.28627450980392155" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="catBtnTapped:" destination="-1" eventType="touchUpInside" id="akv-HH-yJG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8d-SF-l72">
+                            <rect key="frame" x="97" y="0.0" width="69" height="68"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="병원" image="2430">
+                                <color key="titleColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.28627450980392155" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="hospitalBtnTapped:" destination="-1" eventType="touchUpInside" id="B5g-8C-hic"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-Of-d57">
+                            <rect key="frame" x="176" y="0.0" width="81" height="68"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="배급소" image="2433">
+                                <color key="titleColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.28627450980392155" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="restaurantBtnTapped:" destination="-1" eventType="touchUpInside" id="QJz-GG-zEx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCF-jN-9aQ">
+                            <rect key="frame" x="267" y="0.0" width="69" height="68"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="쉼터" image="2432">
+                                <color key="titleColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.28627450980392155" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="shelterBtnTapped:" destination="-1" eventType="touchUpInside" id="nZf-nd-fFY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vua-EI-EpB">
+                    <rect key="frame" x="0.0" y="39.5" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Bun-Vz-1jB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vua-EI-EpB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4rL-Ue-2o0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Rwm-mP-6CG" secondAttribute="trailing" constant="39" id="KH8-B9-0Ml"/>
+                <constraint firstItem="Rwm-mP-6CG" firstAttribute="top" secondItem="Vua-EI-EpB" secondAttribute="bottom" constant="19" id="Tfc-cH-rJP"/>
+                <constraint firstAttribute="trailing" secondItem="Vua-EI-EpB" secondAttribute="trailing" id="aIE-ZW-0FH"/>
+                <constraint firstItem="Vib-wg-GmU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iSy-xz-rqL"/>
+                <constraint firstItem="Vua-EI-EpB" firstAttribute="top" secondItem="Vib-wg-GmU" secondAttribute="bottom" constant="19" id="p65-zw-Yfq"/>
+                <constraint firstItem="Rwm-mP-6CG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="39" id="sXn-uB-dnB"/>
+                <constraint firstItem="Vib-wg-GmU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tx0-rQ-8T1"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2430" width="44" height="44"/>
+        <image name="2432" width="44" height="44"/>
+        <image name="2433" width="44" height="44"/>
+        <image name="2436" width="50" height="50"/>
+    </resources>
+</document>
