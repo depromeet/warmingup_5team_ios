@@ -39,6 +39,9 @@
 		DA3F72DE236D67B900AABCA2 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72DD236D67B900AABCA2 /* NetworkRouter.swift */; };
 		DA3F72E0236D687300AABCA2 /* StreetCatMapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72DF236D687300AABCA2 /* StreetCatMapPoint.swift */; };
 		DA3F72E2236D68EF00AABCA2 /* StreetCatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72E1236D68EF00AABCA2 /* StreetCatError.swift */; };
+		DA8F4F8A23764618001219E6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F4F8923764618001219E6 /* SplashViewController.swift */; };
+		DA8F4F8F23764768001219E6 /* splash_video_shortened.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8F4F8E23764719001219E6 /* splash_video_shortened.mp4 */; };
+		EC4D51BD52FBBB928C7E5260 /* Pods_StreetCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B5147FB93D491F65702348 /* Pods_StreetCat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		11291D1B429CA25EDAB6720D /* Pods-StreetCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.debug.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.debug.xcconfig"; sourceTree = "<group>"; };
 		1210F9F523708F2700F9855A /* MiniFloatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniFloatingView.xib; sourceTree = "<group>"; };
 		1210F9F72370901A00F9855A /* MiniFloatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFloatingView.swift; sourceTree = "<group>"; };
 		1210F9F92370B10500F9855A /* AroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		DA3F72DD236D67B900AABCA2 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		DA3F72DF236D687300AABCA2 /* StreetCatMapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCatMapPoint.swift; sourceTree = "<group>"; };
 		DA3F72E1236D68EF00AABCA2 /* StreetCatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCatError.swift; sourceTree = "<group>"; };
+		DA8F4F8923764618001219E6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		DA8F4F8E23764719001219E6 /* splash_video_shortened.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = splash_video_shortened.mp4; sourceTree = "<group>"; };
 		FCD9B16399354DFEBA1E3787 /* Pods-StreetCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.release.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7817DD8A923ABBED94933106 /* Pods_StreetCat.framework in Frameworks */,
+				EC4D51BD52FBBB928C7E5260 /* Pods_StreetCat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +119,8 @@
 				1210FA02237222BD00F9855A /* MiniFloatingViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1B55972E0C08156289C30FE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +167,7 @@
 				7E61F48223589B2C00873350 /* ContentView.swift */,
 				7E61F48423589B2D00873350 /* Assets.xcassets */,
 				7E61F48923589B2D00873350 /* LaunchScreen.storyboard */,
+				DA8F4F8E23764719001219E6 /* splash_video_shortened.mp4 */,
 				7E61F48C23589B2D00873350 /* Info.plist */,
 				7E61F48623589B2D00873350 /* Preview Content */,
 				7EFF17FC235AF3EF00412F96 /* MapViewController.swift */,
@@ -191,6 +200,7 @@
 				1210F9FD2370E24D00F9855A /* FindDirectionView.swift */,
 				1210F9FF2372088800F9855A /* FindDirectionView.xib */,
 				DA3F72DB236D5FE000AABCA2 /* StreetCatMapView.swift */,
+				DA8F4F8923764618001219E6 /* SplashViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +305,7 @@
 				7EEDD9072364AFA500241D5D /* ControlPanelView.xib in Resources */,
 				7E61F48823589B2D00873350 /* Preview Assets.xcassets in Resources */,
 				1210FA002372088800F9855A /* FindDirectionView.xib in Resources */,
+				DA8F4F8F23764768001219E6 /* splash_video_shortened.mp4 in Resources */,
 				1210F9F623708F2700F9855A /* MiniFloatingView.xib in Resources */,
 				7E61F48523589B2D00873350 /* Assets.xcassets in Resources */,
 			);
@@ -371,6 +382,7 @@
 				DA3F72DA236D5A1600AABCA2 /* PedestrianRouteResponse.swift in Sources */,
 				7E949C67236611000012CE4F /* UIButtonExtensions.swift in Sources */,
 				1210F9FA2370B10500F9855A /* AroundView.swift in Sources */,
+				DA8F4F8A23764618001219E6 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
