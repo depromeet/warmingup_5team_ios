@@ -14,6 +14,11 @@
 		1210F9FE2370E24D00F9855A /* FindDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210F9FD2370E24D00F9855A /* FindDirectionView.swift */; };
 		1210FA002372088800F9855A /* FindDirectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1210F9FF2372088800F9855A /* FindDirectionView.xib */; };
 		1210FA03237222BD00F9855A /* MiniFloatingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210FA02237222BD00F9855A /* MiniFloatingViewModel.swift */; };
+		1210FA0F237605BA00F9855A /* FloatingPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210FA0E237605BA00F9855A /* FloatingPanelViewController.swift */; };
+		1210FA11237605EA00F9855A /* FloatingPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1210FA10237605EA00F9855A /* FloatingPanelViewController.xib */; };
+		1210FA152376092A00F9855A /* CatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210FA132376092A00F9855A /* CatCell.swift */; };
+		1210FA162376092A00F9855A /* CatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1210FA142376092A00F9855A /* CatCell.xib */; };
+		1210FA18237613CA00F9855A /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210FA17237613CA00F9855A /* NSObjectExtensions.swift */; };
 		4F2A2D8A5887F7F273331BB3 /* Pods_StreetCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22EE5F9B455FD5766F5A18E /* Pods_StreetCat.framework */; };
 		7E61F47F23589B2C00873350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61F47E23589B2C00873350 /* AppDelegate.swift */; };
 		7E61F48123589B2C00873350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61F48023589B2C00873350 /* SceneDelegate.swift */; };
@@ -37,6 +42,11 @@
 		1210F9FD2370E24D00F9855A /* FindDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDirectionView.swift; sourceTree = "<group>"; };
 		1210F9FF2372088800F9855A /* FindDirectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindDirectionView.xib; sourceTree = "<group>"; };
 		1210FA02237222BD00F9855A /* MiniFloatingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFloatingViewModel.swift; sourceTree = "<group>"; };
+		1210FA0E237605BA00F9855A /* FloatingPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelViewController.swift; sourceTree = "<group>"; };
+		1210FA10237605EA00F9855A /* FloatingPanelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingPanelViewController.xib; sourceTree = "<group>"; };
+		1210FA132376092A00F9855A /* CatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCell.swift; sourceTree = "<group>"; };
+		1210FA142376092A00F9855A /* CatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatCell.xib; sourceTree = "<group>"; };
+		1210FA17237613CA00F9855A /* NSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		49B1A4E243F723FF975376E2 /* Pods-StreetCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.release.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.release.xcconfig"; sourceTree = "<group>"; };
 		65B1AA47B4AFCBFD7F6DD50C /* Pods-StreetCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.debug.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.debug.xcconfig"; sourceTree = "<group>"; };
 		7E61F47B23589B2C00873350 /* StreetCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +86,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		1210FA12237608F800F9855A /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1210FA132376092A00F9855A /* CatCell.swift */,
+				1210FA142376092A00F9855A /* CatCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		7E61F47223589B2C00873350 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +126,8 @@
 				7E61F48C23589B2D00873350 /* Info.plist */,
 				7E61F48623589B2D00873350 /* Preview Content */,
 				7EFF17FC235AF3EF00412F96 /* MapViewController.swift */,
+				1210FA0E237605BA00F9855A /* FloatingPanelViewController.swift */,
+				1210FA10237605EA00F9855A /* FloatingPanelViewController.xib */,
 			);
 			path = StreetCat;
 			sourceTree = "<group>";
@@ -122,6 +143,7 @@
 		7E949C612364B70D0012CE4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1210FA12237608F800F9855A /* CollectionViewCell */,
 				1210FA01237222A500F9855A /* ViewModel */,
 				7EEDD9062364AFA500241D5D /* ControlPanelView.xib */,
 				7EEDD9082364B06900241D5D /* ControlPanelView.swift */,
@@ -141,6 +163,7 @@
 			children = (
 				7EEDD90B2364B23800241D5D /* UIViewExtensions.swift */,
 				7E949C66236611000012CE4F /* UIButtonExtensions.swift */,
+				1210FA17237613CA00F9855A /* NSObjectExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E61F48B23589B2D00873350 /* LaunchScreen.storyboard in Resources */,
+				1210FA11237605EA00F9855A /* FloatingPanelViewController.xib in Resources */,
 				1210F9FC2370B12800F9855A /* AroundView.xib in Resources */,
+				1210FA162376092A00F9855A /* CatCell.xib in Resources */,
 				7EEDD9072364AFA500241D5D /* ControlPanelView.xib in Resources */,
 				7E61F48823589B2D00873350 /* Preview Assets.xcassets in Resources */,
 				1210FA002372088800F9855A /* FindDirectionView.xib in Resources */,
@@ -282,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E61F47F23589B2C00873350 /* AppDelegate.swift in Sources */,
+				1210FA152376092A00F9855A /* CatCell.swift in Sources */,
 				7E949C692366113B0012CE4F /* ControlPanelContainerView.swift in Sources */,
 				7E61F48123589B2C00873350 /* SceneDelegate.swift in Sources */,
+				1210FA18237613CA00F9855A /* NSObjectExtensions.swift in Sources */,
 				1210F9FE2370E24D00F9855A /* FindDirectionView.swift in Sources */,
 				7E61F48323589B2C00873350 /* ContentView.swift in Sources */,
 				7EEDD9092364B06900241D5D /* ControlPanelView.swift in Sources */,
@@ -291,6 +318,7 @@
 				1210FA03237222BD00F9855A /* MiniFloatingViewModel.swift in Sources */,
 				1210F9F82370901A00F9855A /* MiniFloatingView.swift in Sources */,
 				7EFF17FD235AF3EF00412F96 /* MapViewController.swift in Sources */,
+				1210FA0F237605BA00F9855A /* FloatingPanelViewController.swift in Sources */,
 				7E949C67236611000012CE4F /* UIButtonExtensions.swift in Sources */,
 				1210F9FA2370B10500F9855A /* AroundView.swift in Sources */,
 			);
