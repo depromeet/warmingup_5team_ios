@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatingPanelViewController" customModule="StreetCat" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Aho-8W-Tly" id="D88-QQ-vdL"/>
+                <outlet property="view" destination="iN0-l3-epB" id="tp9-V3-j1q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmA-rg-67W">
+                    <rect key="frame" x="177" y="57" width="60" height="5"/>
+                    <color key="backgroundColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.28627450980392155" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="Roh-Dw-iRl"/>
+                        <constraint firstAttribute="width" constant="60" id="xQD-Zl-RiQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-8W-Tly">
+                    <rect key="frame" x="0.0" y="87" width="414" height="775"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cwz-PA-Ptb">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Aho-8W-Tly" firstAttribute="top" secondItem="GmA-rg-67W" secondAttribute="bottom" constant="25" id="0Sz-Ud-d1f"/>
+                <constraint firstItem="Aho-8W-Tly" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2wM-Vp-sRh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Aho-8W-Tly" secondAttribute="trailing" id="DmH-rh-GbZ"/>
+                <constraint firstItem="GmA-rg-67W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JMO-ew-r0p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Aho-8W-Tly" secondAttribute="bottom" id="dcV-v9-5I4"/>
+                <constraint firstItem="GmA-rg-67W" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="myK-ko-aFb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="109"/>
+        </view>
+    </objects>
+</document>
