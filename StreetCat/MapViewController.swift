@@ -13,11 +13,8 @@ import SnapKit
 
 class MapViewController: UIViewController {
 
-    // TODO: 디자인 가이드 반영
     let controlPanelContainerView = ControlPanelContainerView(frame: .zero)
-
-    // TODO: SwiftUI 작업
-    let floatingPanelViewController = UIViewController()
+    let floatingPanelViewController = FloatingPanelViewController(nibName: FloatingPanelViewController.className, bundle: nil)
 
     let miniFloatingView = MiniFloatingView(frame: .zero)
 
@@ -54,6 +51,12 @@ class MapViewController: UIViewController {
             $0.trailing.equalTo(controlPanelContainerView.snp.trailing)
             $0.bottom.equalTo(controlPanelContainerView.snp.top).offset(35)
             $0.height.equalTo(0)
+        }
+        
+        miniFloatingView.aroundView.didTapCatButton = { [weak self] _ in
+            guard let self = self else { return }
+            
+            self.present(self.floatingPanelViewController, animated: true, completion: nil)
         }
     }
 
