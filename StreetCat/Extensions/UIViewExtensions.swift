@@ -20,6 +20,10 @@ extension UIView {
         nib.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(nib)
     }
+    
+    class var nib: UINib {
+        return UINib(nibName: self.className, bundle: nil)
+    }
 }
 
 @IBDesignable
