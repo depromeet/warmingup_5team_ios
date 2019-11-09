@@ -20,11 +20,12 @@ class MapViewController: UIViewController {
     let floatingPanelViewController = FloatingPanelViewController(nibName: FloatingPanelViewController.className, bundle: nil)
 
     let miniFloatingView = MiniFloatingView(frame: .zero)
+    private lazy var mapView = StreetCatMapView(frame: view.frame)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let mapView = StreetCatMapView(frame: view.frame)
+        
         view.addSubview(mapView)
 
         view.addSubview(miniFloatingView)
@@ -62,16 +63,40 @@ class MapViewController: UIViewController {
             self.present(self.floatingPanelViewController, animated: true, completion: nil)
         }
         
-        // TODO: Remove Tests
+        // TODO: Attach actual locations
         let start = StreetCatMapPoint(x: 126.9478883, y: 37.546976)
         let end = StreetCatMapPoint(x: 126.9634018, y: 37.5457464)
+        
         RoutingService.pedestrianRoute(start: start, end: end)
-            .subscribe(onSuccess: { response in
-                print(response)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onSuccess: { [weak self] response in
+                guard let geometries: [TMAPGeometry?] = response.features?
+                    .filter({ $0.geometry?.type == .some(.lineString)})
+                    .map({ $0.geometry }) else {
+                    return
+                }
+                
+                geometries.forEach({ geometry in
+                    guard let coordinates = geometry?.coordinates else { fatalError() }
+                    print(coordinates)
+                    let points = coordinates.map({ coordinate -> NMGLatLng in
+                        NMGLatLng(lat: coordinate[1], lng: coordinate[0])
+                    })
+                    print(points)
+                    let path = NMFPath(points: points)
+                    path?.color = UIColor(red: 0, green: 97, blue: 186)
+                    path?.width = 8
+                    path?.mapView = self?.mapView.mapView
+                })
+                
             }, onError: { error in
                 print(error)
             })
             .disposed(by: disposeBag)
+        
+        
+        let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: start.y, lng: start.x))
+        mapView.mapView.moveCamera(cameraUpdate)
     }
 
     private func tapControlPanelButton(sender: UIButton, type: FloatingViewType) {

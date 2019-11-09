@@ -18,16 +18,12 @@ class RoutingService {
             let route = NetworkRouter.pedestrianRoute(start: start,
                                                       end: end)
             let call = Alamofire.request(route)
-//                .validate()
+                .validate()
                 .responseData(queue: utilityQueue) { response in
-                      print("Request: \(response.request)")
-                      print("Response: \(response.response)")
+                    #if DEBUG
                       print("Error: \(response.error)")
                       print("Timeline: \(response.timeline)")
-
-                      if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                          print("Data: \(utf8Text)")
-                      }
+                    #endif
                     if let error = response.error {
                         observer(.error(error))
                         print(error)

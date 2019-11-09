@@ -41,6 +41,7 @@
 		DA3F72E2236D68EF00AABCA2 /* StreetCatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72E1236D68EF00AABCA2 /* StreetCatError.swift */; };
 		DA8F4F8A23764618001219E6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F4F8923764618001219E6 /* SplashViewController.swift */; };
 		DA8F4F8F23764768001219E6 /* splash_video_shortened.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8F4F8E23764719001219E6 /* splash_video_shortened.mp4 */; };
+		DAE6BC6223765C8200240CE9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6BC6123765C8200240CE9 /* UIColor.swift */; };
 		EC4D51BD52FBBB928C7E5260 /* Pods_StreetCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B5147FB93D491F65702348 /* Pods_StreetCat.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		DA3F72E1236D68EF00AABCA2 /* StreetCatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCatError.swift; sourceTree = "<group>"; };
 		DA8F4F8923764618001219E6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DA8F4F8E23764719001219E6 /* splash_video_shortened.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = splash_video_shortened.mp4; sourceTree = "<group>"; };
+		DAE6BC6123765C8200240CE9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		FCD9B16399354DFEBA1E3787 /* Pods-StreetCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.release.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +213,7 @@
 				7EEDD90B2364B23800241D5D /* UIViewExtensions.swift */,
 				7E949C66236611000012CE4F /* UIButtonExtensions.swift */,
 				1210FA17237613CA00F9855A /* NSObjectExtensions.swift */,
+				DAE6BC6123765C8200240CE9 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3F72E2236D68EF00AABCA2 /* StreetCatError.swift in Sources */,
+				DAE6BC6223765C8200240CE9 /* UIColor.swift in Sources */,
 				7E61F47F23589B2C00873350 /* AppDelegate.swift in Sources */,
 				1210FA152376092A00F9855A /* CatCell.swift in Sources */,
 				DA3F72E0236D687300AABCA2 /* StreetCatMapPoint.swift in Sources */,
