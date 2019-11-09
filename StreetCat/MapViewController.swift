@@ -10,8 +10,11 @@ import Foundation
 import UIKit
 import NMapsMap
 import SnapKit
+import RxSwift
 
 class MapViewController: UIViewController {
+    
+    var disposeBag = DisposeBag()
 
     let controlPanelContainerView = ControlPanelContainerView(frame: .zero)
     let floatingPanelViewController = FloatingPanelViewController(nibName: FloatingPanelViewController.className, bundle: nil)
@@ -21,7 +24,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let mapView = NMFMapView(frame: view.frame)
+        let mapView = StreetCatMapView(frame: view.frame)
         view.addSubview(mapView)
 
         view.addSubview(miniFloatingView)
@@ -58,6 +61,17 @@ class MapViewController: UIViewController {
             
             self.present(self.floatingPanelViewController, animated: true, completion: nil)
         }
+        
+        // TODO: Remove Tests
+        let start = StreetCatMapPoint(x: 126.9478883, y: 37.546976)
+        let end = StreetCatMapPoint(x: 126.9634018, y: 37.5457464)
+        RoutingService.pedestrianRoute(start: start, end: end)
+            .subscribe(onSuccess: { response in
+                print(response)
+            }, onError: { error in
+                print(error)
+            })
+            .disposed(by: disposeBag)
     }
 
     private func tapControlPanelButton(sender: UIButton, type: FloatingViewType) {
