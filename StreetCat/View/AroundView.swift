@@ -25,23 +25,29 @@ class AroundView: UIView {
         shelterButton.alignVertical(spacing: 8)
     }
     
+    var didTapCatButton: ((_ sender: UIButton) -> Void)?
+    var didTapHospitalButton: ((_ sender: UIButton) -> Void)?
+    var didTapRestaurantButton: ((_ sender: UIButton) -> Void)?
+    var didTapShelterButton: ((_ sender: UIButton) -> Void)?
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     @IBAction func catBtnTapped(_ sender: UIButton) {
-        
+        didTapCatButton?(sender)
     }
     
     @IBAction func hospitalBtnTapped(_ sender: UIButton) {
-        
+        didTapHospitalButton?(sender)
     }
     
     @IBAction func restaurantBtnTapped(_ sender: UIButton) {
-        
+        didTapRestaurantButton?(sender)
     }
     
     @IBAction func shelterBtnTapped(_ sender: UIButton) {
+        didTapShelterButton?(sender)
     }
     
 }
