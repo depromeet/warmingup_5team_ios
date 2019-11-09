@@ -32,9 +32,34 @@
 		7EEDD9092364B06900241D5D /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDD9082364B06900241D5D /* ControlPanelView.swift */; };
 		7EEDD90C2364B23800241D5D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDD90B2364B23800241D5D /* UIViewExtensions.swift */; };
 		7EFF17FD235AF3EF00412F96 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF17FC235AF3EF00412F96 /* MapViewController.swift */; };
+		DA3F72D6236D534B00AABCA2 /* RoutingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72D5236D534B00AABCA2 /* RoutingService.swift */; };
+		DA3F72D8236D5A0B00AABCA2 /* PedestrianRouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72D7236D5A0B00AABCA2 /* PedestrianRouteRequest.swift */; };
+		DA3F72DA236D5A1600AABCA2 /* PedestrianRouteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72D9236D5A1600AABCA2 /* PedestrianRouteResponse.swift */; };
+		DA3F72DC236D5FE000AABCA2 /* StreetCatMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72DB236D5FE000AABCA2 /* StreetCatMapView.swift */; };
+		DA3F72DE236D67B900AABCA2 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72DD236D67B900AABCA2 /* NetworkRouter.swift */; };
+		DA3F72E0236D687300AABCA2 /* StreetCatMapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72DF236D687300AABCA2 /* StreetCatMapPoint.swift */; };
+		DA3F72E2236D68EF00AABCA2 /* StreetCatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F72E1236D68EF00AABCA2 /* StreetCatError.swift */; };
+		DA8F4F8A23764618001219E6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F4F8923764618001219E6 /* SplashViewController.swift */; };
+		DA8F4F8F23764768001219E6 /* splash_video_shortened.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA8F4F8E23764719001219E6 /* splash_video_shortened.mp4 */; };
+		DAE6BC6223765C8200240CE9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6BC6123765C8200240CE9 /* UIColor.swift */; };
+		EC4D51BD52FBBB928C7E5260 /* Pods_StreetCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B5147FB93D491F65702348 /* Pods_StreetCat.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DA3F72D3236D51E600AABCA2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		11291D1B429CA25EDAB6720D /* Pods-StreetCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.debug.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.debug.xcconfig"; sourceTree = "<group>"; };
 		1210F9F523708F2700F9855A /* MiniFloatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniFloatingView.xib; sourceTree = "<group>"; };
 		1210F9F72370901A00F9855A /* MiniFloatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFloatingView.swift; sourceTree = "<group>"; };
 		1210F9F92370B10500F9855A /* AroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundView.swift; sourceTree = "<group>"; };
@@ -49,6 +74,8 @@
 		1210FA17237613CA00F9855A /* NSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		49B1A4E243F723FF975376E2 /* Pods-StreetCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.release.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.release.xcconfig"; sourceTree = "<group>"; };
 		65B1AA47B4AFCBFD7F6DD50C /* Pods-StreetCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.debug.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.debug.xcconfig"; sourceTree = "<group>"; };
+		11291D1B429CA25EDAB6720D /* Pods-StreetCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.debug.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.debug.xcconfig"; sourceTree = "<group>"; };
+		51B5147FB93D491F65702348 /* Pods_StreetCat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreetCat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E61F47B23589B2C00873350 /* StreetCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E61F47E23589B2C00873350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E61F48023589B2C00873350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +90,17 @@
 		7EEDD9082364B06900241D5D /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		7EEDD90B2364B23800241D5D /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		7EFF17FC235AF3EF00412F96 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		C22EE5F9B455FD5766F5A18E /* Pods_StreetCat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreetCat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3F72D5236D534B00AABCA2 /* RoutingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingService.swift; sourceTree = "<group>"; };
+		DA3F72D7236D5A0B00AABCA2 /* PedestrianRouteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedestrianRouteRequest.swift; sourceTree = "<group>"; };
+		DA3F72D9236D5A1600AABCA2 /* PedestrianRouteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedestrianRouteResponse.swift; sourceTree = "<group>"; };
+		DA3F72DB236D5FE000AABCA2 /* StreetCatMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCatMapView.swift; sourceTree = "<group>"; };
+		DA3F72DD236D67B900AABCA2 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		DA3F72DF236D687300AABCA2 /* StreetCatMapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCatMapPoint.swift; sourceTree = "<group>"; };
+		DA3F72E1236D68EF00AABCA2 /* StreetCatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCatError.swift; sourceTree = "<group>"; };
+		DA8F4F8923764618001219E6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		DA8F4F8E23764719001219E6 /* splash_video_shortened.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = splash_video_shortened.mp4; sourceTree = "<group>"; };
+		DAE6BC6123765C8200240CE9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FCD9B16399354DFEBA1E3787 /* Pods-StreetCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetCat.release.xcconfig"; path = "Target Support Files/Pods-StreetCat/Pods-StreetCat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2A2D8A5887F7F273331BB3 /* Pods_StreetCat.framework in Frameworks */,
+				EC4D51BD52FBBB928C7E5260 /* Pods_StreetCat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +121,14 @@
 				1210FA02237222BD00F9855A /* MiniFloatingViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1B55972E0C08156289C30FE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B5147FB93D491F65702348 /* Pods_StreetCat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1210FA12237608F800F9855A /* CollectionViewCell */ = {
@@ -101,7 +146,7 @@
 				7E61F47D23589B2C00873350 /* StreetCat */,
 				7E61F47C23589B2C00873350 /* Products */,
 				B9E49C0F87D3388430B10654 /* Pods */,
-				BFFBE699059BEE4CA541E6CB /* Frameworks */,
+				1B55972E0C08156289C30FE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +161,7 @@
 		7E61F47D23589B2C00873350 /* StreetCat */ = {
 			isa = PBXGroup;
 			children = (
+				DA3F72D4236D531E00AABCA2 /* Data */,
 				7E949C612364B70D0012CE4F /* View */,
 				7EEDD90A2364B22D00241D5D /* Extensions */,
 				7E61F47E23589B2C00873350 /* AppDelegate.swift */,
@@ -123,6 +169,7 @@
 				7E61F48223589B2C00873350 /* ContentView.swift */,
 				7E61F48423589B2D00873350 /* Assets.xcassets */,
 				7E61F48923589B2D00873350 /* LaunchScreen.storyboard */,
+				DA8F4F8E23764719001219E6 /* splash_video_shortened.mp4 */,
 				7E61F48C23589B2D00873350 /* Info.plist */,
 				7E61F48623589B2D00873350 /* Preview Content */,
 				7EFF17FC235AF3EF00412F96 /* MapViewController.swift */,
@@ -154,6 +201,8 @@
 				1210F9FB2370B12800F9855A /* AroundView.xib */,
 				1210F9FD2370E24D00F9855A /* FindDirectionView.swift */,
 				1210F9FF2372088800F9855A /* FindDirectionView.xib */,
+				DA3F72DB236D5FE000AABCA2 /* StreetCatMapView.swift */,
+				DA8F4F8923764618001219E6 /* SplashViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +213,7 @@
 				7EEDD90B2364B23800241D5D /* UIViewExtensions.swift */,
 				7E949C66236611000012CE4F /* UIButtonExtensions.swift */,
 				1210FA17237613CA00F9855A /* NSObjectExtensions.swift */,
+				DAE6BC6123765C8200240CE9 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -171,18 +221,23 @@
 		B9E49C0F87D3388430B10654 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				65B1AA47B4AFCBFD7F6DD50C /* Pods-StreetCat.debug.xcconfig */,
-				49B1A4E243F723FF975376E2 /* Pods-StreetCat.release.xcconfig */,
+				11291D1B429CA25EDAB6720D /* Pods-StreetCat.debug.xcconfig */,
+				FCD9B16399354DFEBA1E3787 /* Pods-StreetCat.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BFFBE699059BEE4CA541E6CB /* Frameworks */ = {
+		DA3F72D4236D531E00AABCA2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				C22EE5F9B455FD5766F5A18E /* Pods_StreetCat.framework */,
+				DA3F72D5236D534B00AABCA2 /* RoutingService.swift */,
+				DA3F72D7236D5A0B00AABCA2 /* PedestrianRouteRequest.swift */,
+				DA3F72D9236D5A1600AABCA2 /* PedestrianRouteResponse.swift */,
+				DA3F72DD236D67B900AABCA2 /* NetworkRouter.swift */,
+				DA3F72DF236D687300AABCA2 /* StreetCatMapPoint.swift */,
+				DA3F72E1236D68EF00AABCA2 /* StreetCatError.swift */,
 			);
-			name = Frameworks;
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,11 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E61F48F23589B2D00873350 /* Build configuration list for PBXNativeTarget "StreetCat" */;
 			buildPhases = (
-				67580A0130D454F40FED6738 /* [CP] Check Pods Manifest.lock */,
+				86452A8E01926A1A46B66035 /* [CP] Check Pods Manifest.lock */,
 				7E61F47723589B2C00873350 /* Sources */,
 				7E61F47823589B2C00873350 /* Frameworks */,
 				7E61F47923589B2C00873350 /* Resources */,
-				7CC451AD5E436F17D9726229 /* [CP] Embed Pods Frameworks */,
+				DA3F72D3236D51E600AABCA2 /* Embed Frameworks */,
+				F1A44A8E3073E392E228161A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +308,7 @@
 				7EEDD9072364AFA500241D5D /* ControlPanelView.xib in Resources */,
 				7E61F48823589B2D00873350 /* Preview Assets.xcassets in Resources */,
 				1210FA002372088800F9855A /* FindDirectionView.xib in Resources */,
+				DA8F4F8F23764768001219E6 /* splash_video_shortened.mp4 in Resources */,
 				1210F9F623708F2700F9855A /* MiniFloatingView.xib in Resources */,
 				7E61F48523589B2D00873350 /* Assets.xcassets in Resources */,
 			);
@@ -260,7 +317,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67580A0130D454F40FED6738 /* [CP] Check Pods Manifest.lock */ = {
+		86452A8E01926A1A46B66035 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,7 +339,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7CC451AD5E436F17D9726229 /* [CP] Embed Pods Frameworks */ = {
+		F1A44A8E3073E392E228161A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,8 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3F72E2236D68EF00AABCA2 /* StreetCatError.swift in Sources */,
+				DAE6BC6223765C8200240CE9 /* UIColor.swift in Sources */,
 				7E61F47F23589B2C00873350 /* AppDelegate.swift in Sources */,
 				1210FA152376092A00F9855A /* CatCell.swift in Sources */,
+				DA3F72E0236D687300AABCA2 /* StreetCatMapPoint.swift in Sources */,
 				7E949C692366113B0012CE4F /* ControlPanelContainerView.swift in Sources */,
 				7E61F48123589B2C00873350 /* SceneDelegate.swift in Sources */,
 				1210FA18237613CA00F9855A /* NSObjectExtensions.swift in Sources */,
@@ -317,10 +377,16 @@
 				7EEDD90C2364B23800241D5D /* UIViewExtensions.swift in Sources */,
 				1210FA03237222BD00F9855A /* MiniFloatingViewModel.swift in Sources */,
 				1210F9F82370901A00F9855A /* MiniFloatingView.swift in Sources */,
+				DA3F72D8236D5A0B00AABCA2 /* PedestrianRouteRequest.swift in Sources */,
+				DA3F72D6236D534B00AABCA2 /* RoutingService.swift in Sources */,
+				DA3F72DE236D67B900AABCA2 /* NetworkRouter.swift in Sources */,
 				7EFF17FD235AF3EF00412F96 /* MapViewController.swift in Sources */,
 				1210FA0F237605BA00F9855A /* FloatingPanelViewController.swift in Sources */,
+				DA3F72DC236D5FE000AABCA2 /* StreetCatMapView.swift in Sources */,
+				DA3F72DA236D5A1600AABCA2 /* PedestrianRouteResponse.swift in Sources */,
 				7E949C67236611000012CE4F /* UIButtonExtensions.swift in Sources */,
 				1210F9FA2370B10500F9855A /* AroundView.swift in Sources */,
+				DA8F4F8A23764618001219E6 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +520,7 @@
 		};
 		7E61F49023589B2D00873350 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65B1AA47B4AFCBFD7F6DD50C /* Pods-StreetCat.debug.xcconfig */;
+			baseConfigurationReference = 11291D1B429CA25EDAB6720D /* Pods-StreetCat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -462,11 +528,16 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StreetCat/Preview Content\"";
 				DEVELOPMENT_TEAM = 88MSX4L44J;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/NMapsMap/framework",
+				);
 				INFOPLIST_FILE = StreetCat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.depromeet.street.cat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -477,7 +548,7 @@
 		};
 		7E61F49123589B2D00873350 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49B1A4E243F723FF975376E2 /* Pods-StreetCat.release.xcconfig */;
+			baseConfigurationReference = FCD9B16399354DFEBA1E3787 /* Pods-StreetCat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -485,6 +556,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StreetCat/Preview Content\"";
 				DEVELOPMENT_TEAM = 88MSX4L44J;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/NMapsMap/framework",
+				);
 				INFOPLIST_FILE = StreetCat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

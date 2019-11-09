@@ -10,18 +10,23 @@ import Foundation
 import UIKit
 import NMapsMap
 import SnapKit
+import RxSwift
 
 class MapViewController: UIViewController {
+    
+    var disposeBag = DisposeBag()
 
     let controlPanelContainerView = ControlPanelContainerView(frame: .zero)
     let floatingPanelViewController = FloatingPanelViewController(nibName: FloatingPanelViewController.className, bundle: nil)
 
     let miniFloatingView = MiniFloatingView(frame: .zero)
+    private lazy var mapView = StreetCatMapView(frame: view.frame)
+    private var paths: [NMFPath?] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let mapView = NMFMapView(frame: view.frame)
+        
         view.addSubview(mapView)
 
         view.addSubview(miniFloatingView)
@@ -58,6 +63,18 @@ class MapViewController: UIViewController {
             
             self.present(self.floatingPanelViewController, animated: true, completion: nil)
         }
+        
+        let start = StreetCatMapPoint(x: 126.9498057, y: 37.546631)
+        
+        floatingPanelViewController.catPedestrianRoutingHandler = { [weak self] end in
+            // Clear map
+            self?.paths.forEach({ $0?.mapView = nil })
+            self?.paths.removeAll()
+            self?.showPedestrianRouteOnMap(from: start, to: end)
+        }
+        
+        let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: start.y, lng: start.x))
+        mapView.mapView.moveCamera(cameraUpdate)
     }
 
     private func tapControlPanelButton(sender: UIButton, type: FloatingViewType) {
@@ -77,5 +94,36 @@ class MapViewController: UIViewController {
         UIView.animate(withDuration: 0.7, delay: 0.1, usingSpringWithDamping: 0.7, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
+    }
+    
+    private func showPedestrianRouteOnMap(from start: StreetCatMapPoint, to end: StreetCatMapPoint) {
+
+        RoutingService.pedestrianRoute(start: start, end: end)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onSuccess: { [weak self] response in
+                guard let geometries: [TMAPGeometry?] = response.features?
+                    .filter({ $0.geometry?.type == .some(.lineString)})
+                    .map({ $0.geometry }) else {
+                    return
+                }
+                
+                geometries.forEach({ geometry in
+                    guard let coordinates = geometry?.coordinates else { fatalError() }
+                    print(coordinates)
+                    let points = coordinates.map({ coordinate -> NMGLatLng in
+                        NMGLatLng(lat: coordinate[1], lng: coordinate[0])
+                    })
+                    print(points)
+                    let path = NMFPath(points: points)
+                    path?.color = UIColor(red: 0, green: 97, blue: 186)
+                    path?.width = 8
+                    path?.mapView = self?.mapView.mapView
+                    self?.paths.append(path)
+                })
+                
+            }, onError: { error in
+                print(error)
+            })
+            .disposed(by: disposeBag)
     }
 }

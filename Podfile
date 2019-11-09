@@ -8,4 +8,5 @@ target 'StreetCat' do
   pod 'SwiftyJSON'
   pod 'SnapKit'
   pod 'NMapsMap'
+  pod 'RxSwift'
 end
